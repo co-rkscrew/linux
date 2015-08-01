@@ -1,0 +1,53 @@
+# corkscrew
+cscrew-rxvt
+
+# base
+acpi
+ntfs-3g
+
+# utils
+build-essential
+rsync
+tree
+vim
+openssh-client
+
+# apps
+chromium
+
+# SCM
+git
+subversion
+
+# HTTP
+wget
+curl
+
+# archivers
+xarchiver
+tar
+zip
+unzip
+p7zip
+# missing dep: libc6
+#unrar
+
+
+# video
+awesome
+eterm
+xserver-xorg
+xinit
+ttf-dejavu
+wicd
+
+thunar
+thunar-volman
+thunar-archive-plugin
+thunar-media-tags-plugin
+# missing deps
+#thunar-thumbnailers
+gvfs
+gamin
+hal
+gnome-icon-theme

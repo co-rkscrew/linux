@@ -5,10 +5,14 @@ set -e
 WORK_DIR="/tmp/corkscrew"
 ISO_DIR="/vagrant/iso"
 TMP_DIR="/vagrant/tmp"
+PROFILES_DIR="/vagrant/profiles"
 
 mkdir -p $WORK_DIR
 mkdir -p $ISO_DIR
 mkdir -p $TMP_DIR
+
+# update profiles
+rsync -av $PROFILES_DIR $WORK_DIR/
 
 # restore mirror
 rsync -av --delete $TMP_DIR/mirror $WORK_DIR/tmp/

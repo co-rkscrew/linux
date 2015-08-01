@@ -9,7 +9,7 @@ $provision_script = <<SCRIPT
   
   # install packages
   apt-get update
-  apt-get install -y simple-cdd syslinux rsync
+  apt-get install -y simple-cdd qemu syslinux rsync devscripts debhelper
 
   # provision
   rsync -av /vagrant/provision/ /
