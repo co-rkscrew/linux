@@ -5,4 +5,4 @@ Priority: optional
 Architecture: all
 Depends: rxvt-unicode-256color, ncurses-term
 Maintainer: João Rodrigues <jlrodrigues.dev@gmail.com>
-Description: Test
+Description: Corkscrew Linux customization for rxvt
