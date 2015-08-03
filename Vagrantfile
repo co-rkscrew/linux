@@ -14,6 +14,9 @@ $provision_script = <<SCRIPT
   # provision
   rsync -av /vagrant/provision/ /
   chmod +x /vagrant/*.sh
+
+  # rsync may screw perms
+  chmod +x /etc/apt/detect-http-proxy
 SCRIPT
 
 Vagrant.configure(2) do |config|
