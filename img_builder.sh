@@ -11,7 +11,7 @@ mkdir -p $ISO_DIR
 mkdir -p $TMP_DIR
 
 # build deb packages
-#/vagrant/deb_builder.sh
+/vagrant/deb_builder.sh
 
 # update profiles
 rsync -av --delete $PROFILES_DIR $WORK_DIR
