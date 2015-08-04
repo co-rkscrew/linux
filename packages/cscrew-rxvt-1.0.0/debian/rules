@@ -11,7 +11,3 @@
 
 %:
 	dh $@ 
-
-override_dh_installdeb:
-	dh_installdeb
-	find ${CURDIR}/debian/*/DEBIAN -name conffiles -delete

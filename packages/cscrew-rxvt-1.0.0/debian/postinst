@@ -1,5 +1,5 @@
 #!/bin/sh
-# postinst script for test
+# postinst script for cscrew-rxvt
 #
 # see: dh_installdeb(1)
 
@@ -20,6 +20,8 @@ set -e
 
 case "$1" in
     configure)
+        ln -s /etc/X11/app-defaults/URxvt.cscrew-rxvt /etc/X11/app-defaults/URxvt
+        cscrew-chmownd "root:root" 644 /etc/X11/app-defaults/URxvt.cscrew-rxvt
 		cscrew-chmownd "root:root" 644 /etc/X11/app-defaults/URxvt
     ;;
 

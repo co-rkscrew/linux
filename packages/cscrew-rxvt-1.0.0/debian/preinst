@@ -3,7 +3,7 @@ action="$1"
 
 
 #!/bin/sh
-# preinst script for test
+# preinst script for cscrew-rxvt
 #
 # see: dh_installdeb(1)
 
