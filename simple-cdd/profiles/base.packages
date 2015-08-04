@@ -1,5 +1,7 @@
 # corkscrew
+cscrew-base
 cscrew-rxvt
+cscrew-vim
 
 # base
 acpi
@@ -9,7 +11,6 @@ ntfs-3g
 build-essential
 rsync
 tree
-vim
 openssh-client
 
 # apps
