@@ -1,0 +1,9 @@
+DEB_DIR="/vagrant/deb"
+ISO_DIR="/vagrant/iso"
+PKG_DIR="/vagrant/packages"
+SIMPLE_CDD_DIR=/vagrant/simple-cdd
+TMP_DIR="/vagrant/tmp"
+WORK_DIR="/tmp/corkscrew"
+
+MIRROR_DIR="$TMP_DIR/mirror"
+PROFILES_DIR="$SIMPLE_CDD_DIR/profiles"

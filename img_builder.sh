@@ -2,18 +2,16 @@
 set -e
 #set -x
 
-WORK_DIR="/tmp/corkscrew"
-ISO_DIR="/vagrant/iso"
-TMP_DIR="/vagrant/tmp"
-MIRROR_DIR="$TMP_DIR/mirror"
-PROFILES_DIR="/vagrant/profiles"
+# load vars
+DIR=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
+source $DIR/vars
 
 mkdir -p $WORK_DIR
 mkdir -p $ISO_DIR
 mkdir -p $TMP_DIR
 
 # build deb packages
-/vagrant/deb_builder.sh
+#/vagrant/deb_builder.sh
 
 # update profiles
 rsync -av --delete $PROFILES_DIR $WORK_DIR
@@ -23,7 +21,7 @@ if [ -d "$MIRROR_DIR" ]; then
 	rsync -a --delete $MIRROR_DIR $WORK_DIR/tmp/
 fi
 
-build-simple-cdd  --conf /vagrant/simple-cdd.conf $@
+build-simple-cdd  --conf $SIMPLE_CDD_DIR/simple-cdd.conf $@
 #build-simple-cdd  --conf /vagrant/simple-cdd.conf --debian-mirror http://192.168.33.254:3142/debian
 #build-simple-cdd  --conf /vagrant/simple-cdd.conf --debian-mirror http://localhost:9999/debian | tee /vagrant/tmp/build-simple-cdd.log
 
