@@ -1,0 +1,4 @@
+#!/bin/bash
+set -e
+chown $1 $3
+chmod $2 $3

@@ -1,0 +1,17 @@
+Source: cscrew-base
+Section: misc
+Priority: extra
+Maintainer: João Rodrigues <jlrodrigues.dev@gmail.com>
+Build-Depends: debhelper (>= 8.0.0)
+Standards-Version: 3.9.3
+Homepage: http://co.rkscrew.co
+Vcs-Git: git://github.com/co-rkscrew/linux.git
+Vcs-Browser: https://github.com/co-rkscrew/linux.git
+
+Package: cscrew-base
+Architecture: all
+Depends: ${misc:Depends}
+Description: Corkscrew Linux base package
+ Base metapackege for Corkscrew Linux distribution.
+ Provides transversal functionalities for all corkscrew-* packages.
+ Uninstalling this package removes Corkscrew Linux.

@@ -1,0 +1,10 @@
+#!/bin/bash
+pkg="$1"
+target_file="$2"
+diverted_file="${target_file}.diverted-$pkg"
+
+if dpkg-divert --package "$pkg" --list | grep -F "$diverted_file"
+then
+	dpkg-divert --package "$pkg" --remove --rename \
+		--divert "$diverted_file" "$target_file"
+fi

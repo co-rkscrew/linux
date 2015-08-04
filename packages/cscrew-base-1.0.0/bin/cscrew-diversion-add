@@ -1,0 +1,7 @@
+#!/bin/bash
+pkg="$1"
+target_file="$2"
+diverted_file="${target_file}.diverted-$pkg"
+
+dpkg-divert --package "$pkg" --add --rename \
+	--divert "$diverted_file" "$target_file"
