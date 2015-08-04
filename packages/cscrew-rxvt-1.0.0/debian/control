@@ -1,0 +1,17 @@
+Source: cscrew-rxvt
+Section: misc
+Priority: extra
+Maintainer: João Rodrigues <jlrodrigues.dev@gmail.com>
+Build-Depends: debhelper (>= 8.0.0)
+Standards-Version: 3.9.3
+Homepage: http://co.rkscrew.co
+Vcs-Git: git://github.com/co-rkscrew/linux.git
+Vcs-Browser: https://github.com/co-rkscrew/linux.git
+
+Package: cscrew-rxvt
+Architecture: all
+Depends: cscrew-base, rxvt-unicode-256color, ncurses-term, ${misc:Depends}
+Description: Corkscrew Linux customization for rxvt
+ Dependency package for rxvt-unicode.
+ Also provides a custom configuration for it's appearance.
+ A part of Corkscrew Linux distribution.

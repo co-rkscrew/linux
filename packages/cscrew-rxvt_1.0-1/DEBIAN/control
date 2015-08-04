@@ -1,8 +1,0 @@
-Package: cscrew-rxvt
-Version: 1.0-1
-Section: contrib
-Priority: optional
-Architecture: all
-Depends: rxvt-unicode-256color, ncurses-term
-Maintainer: João Rodrigues <jlrodrigues.dev@gmail.com>
-Description: Corkscrew Linux customization for rxvt

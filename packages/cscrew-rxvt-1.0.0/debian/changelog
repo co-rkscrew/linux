@@ -1,0 +1,11 @@
+cscrew-rxvt (1.0.0) unstable; urgency=low
+
+  * Initial Release.
+  * Provides dependencies:
+  	- cscrew-base
+  	- rxvt-unicode-256color
+  	- ncurses-term
+  * Provides URxvt configuration:
+  	- /etc/X11/app-defaults/URxvt
+
+ -- João Rodrigues <jlrodrigues.dev@gmail.com>  Mon, 03 Aug 2015 20:40:58 +0000
