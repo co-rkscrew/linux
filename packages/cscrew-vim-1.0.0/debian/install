@@ -1,0 +1,2 @@
+profile/* /etc/profile.d/
+conf/vimrc.local etc/vim

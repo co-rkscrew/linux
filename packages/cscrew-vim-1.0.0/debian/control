@@ -1,0 +1,17 @@
+Source: cscrew-vim
+Section: misc
+Priority: extra
+Maintainer: João Rodrigues <jlrodrigues.dev@gmail.com>
+Build-Depends: debhelper (>= 8.0.0)
+Standards-Version: 3.9.3
+Homepage: http://co.rkscrew.co
+Vcs-Git: git://github.com/co-rkscrew/linux.git
+Vcs-Browser: https://github.com/co-rkscrew/linux.git
+
+Package: cscrew-vim
+Architecture: all
+Depends: cscrew-base, vim, ${misc:Depends}
+Description: Corkscrew Linux customization for vim
+ Dependency package for vim.
+ Also provides a custom configuration for vim.
+ A part of Corkscrew Linux distribution.
