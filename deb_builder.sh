@@ -19,10 +19,9 @@ done
 find "$PKG_DIR" -maxdepth 1 -type f | xargs -I {} mv {} $DEB_DIR
 
 if [[ $* == *--lintian* ]]; then
-	LOG="$TMP_DIR/lintian.log"
-	rm -f $LOG
+	rm -f $LINTIAN_LOG
 	find "$DEB_DIR" -type f -name "*.changes" | sort | while read line; do
-		lintian -i -I --show-overrides $line | tee -a $LOG
+		lintian -i -I --show-overrides $line | tee -a $LINTIAN_LOG
 	done
-	echo "wrote log file: $LOG"
+	echo "wrote log file: $LINTIAN_LOG"
 fi

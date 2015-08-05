@@ -1,9 +1,32 @@
-DEB_DIR="/vagrant/deb"
-ISO_DIR="/vagrant/iso"
+###############################################################################
+# Configurable
+###############################################################################
+
+SIMPLE_CDD_DEB_MIRROR="ftp.fr.debian.org"
+SIMPLE_CDD_DEB_SMIRROR="http://security.debian.org/"
+
+
+
+###############################################################################
+# Static (do not edit)
+###############################################################################
+
+# Sources
 PKG_DIR="/vagrant/packages"
 SIMPLE_CDD_DIR=/vagrant/simple-cdd
-TMP_DIR="/vagrant/tmp"
-WORK_DIR="/tmp/corkscrew"
-
-MIRROR_DIR="$TMP_DIR/mirror"
 PROFILES_DIR="$SIMPLE_CDD_DIR/profiles"
+
+# Temporary directories
+TMP_DIR="/vagrant/tmp"
+DEB_DIR="$TMP_DIR/deb"
+ISO_DIR="$TMP_DIR/iso"
+MIRROR_DIR="$TMP_DIR/mirror"
+
+# simple-cdd workspace 
+WORK_DIR="/tmp/corkscrew"
+WORK_DIR_SIMPLE_CDD="$WORK_DIR/simple-cdd"
+
+# logging
+SIMPLE_CDD_LOG="$TMP_DIR/simple-cdd.log"
+LINTIAN_LOG="$TMP_DIR/lintian.log"
+

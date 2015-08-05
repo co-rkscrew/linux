@@ -2,7 +2,7 @@
 
 DIR=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
 
-rm -rf $DIR/{deb,iso,tmp}
+rm -rf $DIR/tmp
 cd $DIR
 vagrant destroy -f
 vagrant up
