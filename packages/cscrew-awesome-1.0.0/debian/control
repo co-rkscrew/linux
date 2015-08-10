@@ -1,0 +1,19 @@
+Source: cscrew-awesome
+Section: misc
+Priority: extra
+Maintainer: João Rodrigues <jlrodrigues.dev@gmail.com>
+Build-Depends: debhelper (>= 8.0.0)
+Standards-Version: 3.9.6
+Homepage: http://co.rkscrew.co
+Vcs-Git: git://github.com/co-rkscrew/linux.git
+Vcs-Browser: https://github.com/co-rkscrew/linux.git
+
+Package: cscrew-awesome
+Architecture: all
+Depends: awesome, xserver-xorg, x11-xserver-utils, xinit, eterm, ${misc:Depends}
+Suggests: build-essential
+Description: Corkscrew Linux customization for awesome
+ Dependency package for awesome window manager.
+ Provides "awesome-copycats" theme pack by Luke Bonham (check
+ https://github.com/copycat-killer/awesome-copycats).
+ A part of Corkscrew Linux distribution.
