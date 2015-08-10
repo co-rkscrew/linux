@@ -3,51 +3,54 @@ cscrew-base
 cscrew-rxvt
 cscrew-vim
 
-# base
-acpi
-ntfs-3g
-
-# utils
-build-essential
-rsync
-tree
-openssh-client
-
-# apps
+# internet browser
 chromium
 
-# SCM
-git
-subversion
-
-# HTTP
-wget
-curl
-
-# archivers
-xarchiver
-tar
-zip
-unzip
-p7zip
-# missing dep: libc6
-#unrar
-
-
-# video
-awesome
-xserver-xorg
-xinit
-ttf-dejavu
-wicd
-
-thunar
-thunar-volman
-thunar-archive-plugin
-thunar-media-tags-plugin
-# missing deps
-#thunar-thumbnailers
-gvfs
-gamin
-hal
-gnome-icon-theme
+# enable as needed
+# # base
+# acpi
+# ntfs-3g
+# 
+# # utils
+# build-essential
+# rsync
+# tree
+# openssh-client
+# 
+# # apps
+# 
+# # SCM
+# git
+# subversion
+# 
+# # HTTP
+# wget
+# curl
+# 
+# # archivers
+# xarchiver
+# tar
+# zip
+# unzip
+# p7zip
+# # missing dep: libc6
+# #unrar
+# 
+# 
+# # video
+# awesome
+# xserver-xorg
+# xinit
+# ttf-dejavu
+# wicd
+# 
+# thunar
+# thunar-volman
+# thunar-archive-plugin
+# thunar-media-tags-plugin
+# # missing deps
+# #thunar-thumbnailers
+# gvfs
+# gamin
+# hal
+# gnome-icon-theme
