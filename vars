@@ -2,10 +2,11 @@
 # Configurable
 ###############################################################################
 
-SIMPLE_CDD_DEB_MIRROR="ftp.fr.debian.org"
+SIMPLE_CDD_DEB_MIRROR="ftp.us.debian.org"
 SIMPLE_CDD_DEB_SMIRROR="http://security.debian.org/"
 
-
+# Check if it works later
+DIST=stretch
 
 ###############################################################################
 # Static (do not edit)

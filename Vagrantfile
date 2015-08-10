@@ -9,19 +9,25 @@ $provision_script = <<SCRIPT
   
   # install packages
   apt-get update
-  apt-get install -y simple-cdd qemu syslinux rsync \
+  apt-get install -y simple-cdd qemu syslinux-utils rsync \
         devscripts debhelper lintian dh-make vim gdebi
-
+  
   # provision
   rsync -av /vagrant/provision/ /
   chmod +x /vagrant/*.sh
 
-  # rsync may screw perms
-  chmod +x /etc/apt/detect-http-proxy
+  # dirty fix for debian-cd (support stretch)
+  ln -s /usr/share/debian-cd/tasks/wheezy/ /usr/share/debian-cd/tasks/stretch
+  ln -s /usr/share/debian-cd/data/jessie/ /usr/share/debian-cd/data/stretch
+  ln -s /usr/share/debian-cd/tools/boot/jessie/ /usr/share/debian-cd/tools/boot/stretch
+
 SCRIPT
 
 Vagrant.configure(2) do |config|
-  config.vm.box = "chef/debian-7.8"
+  # debian 7 wheezy
+  #config.vm.box = "chef/debian-7.8"
+  # debian 9 stretch
+  config.vm.box = "sharlak/debian_stretch_64"
   
   config.vm.network "private_network", ip: "192.168.33.10"
 
