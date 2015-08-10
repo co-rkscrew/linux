@@ -1,0 +1,3 @@
+[submodule "packages/cscrew-awesome-1.0.0/awesome-copycats"]
+	path = packages/cscrew-awesome-1.0.0/awesome-copycats
+	url = https://github.com/copycat-killer/awesome-copycats.git
