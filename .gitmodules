@@ -1,3 +1,6 @@
 [submodule "packages/cscrew-awesome-1.0.0/awesome-copycats"]
 	path = packages/cscrew-awesome-1.0.0/awesome-copycats
 	url = https://github.com/co-rkscrew/awesome-copycats.git
+[submodule "nginx-deb-cacher"]
+	path = nginx-deb-cacher
+	url = https://github.com/co-rkscrew/nginx-deb-cacher.git
