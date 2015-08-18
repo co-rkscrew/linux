@@ -3,7 +3,7 @@
 ###############################################################################
 
 SIMPLE_CDD_DEB_MIRROR="ftp.us.debian.org"
-SIMPLE_CDD_DEB_SMIRROR="http://security.debian.org/"
+SIMPLE_CDD_DEB_SECURITY="security.debian.org"
 
 # Check if it works later
 DIST=stretch
@@ -11,6 +11,8 @@ DIST=stretch
 ###############################################################################
 # Static (do not edit)
 ###############################################################################
+
+SIMPLE_CDD_DEB_SMIRROR="http://${SIMPLE_CDD_DEB_SECURITY}/"
 
 # Sources
 PKG_DIR="/vagrant/packages"
@@ -31,3 +33,9 @@ WORK_DIR_SIMPLE_CDD="$WORK_DIR/simple-cdd"
 SIMPLE_CDD_LOG="$TMP_DIR/simple-cdd.log"
 LINTIAN_LOG="$TMP_DIR/lintian.log"
 
+# for nginx-deb-cacher
+DEB_CACHE_IP_ADDR="192.168.33.250"
+DEB_CACHE_IP_MASK="192.168.33.0/24"
+
+DEB_CACHE_DEB_MIR=$SIMPLE_CDD_DEB_MIRROR
+DEB_CACHE_DEB_SMIR=$SIMPLE_CDD_DEB_SECURITY

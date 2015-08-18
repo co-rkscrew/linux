@@ -8,6 +8,7 @@ $provision_script = <<SCRIPT
   chmod +x /etc/apt/detect-http-proxy
   
   # install packages
+  cp /vagrant/provision/etc/apt/sources.list /etc/apt/sources.list
   apt-get update
   apt-get install -y simple-cdd qemu syslinux-utils rsync \
         devscripts debhelper lintian dh-make vim gdebi

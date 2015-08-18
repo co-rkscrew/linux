@@ -20,7 +20,7 @@ show_proxy_messages=1
 # be available on the top. If no proxy is available, a direct connection will
 # be used
 try_proxies=(
-192.168.33.254:3142
+192.168.33.250:80
 )
 
 print_msg() {
