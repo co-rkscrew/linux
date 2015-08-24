@@ -12,4 +12,5 @@
 /packages/cscrew-awesome*/debian/cscrew-awesome
 /packages/cscrew-base*/debian/cscrew-base
 /packages/cscrew-rxvt*/debian/cscrew-rxvt
+/packages/cscrew-thunar*/debian/cscrew-thunar
 /packages/cscrew-vim*/debian/cscrew-vim

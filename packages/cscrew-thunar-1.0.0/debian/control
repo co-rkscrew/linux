@@ -1,0 +1,16 @@
+Source: cscrew-thunar
+Section: misc
+Priority: extra
+Maintainer: João Rodrigues <jlrodrigues.dev@gmail.com>
+Build-Depends: debhelper (>= 8.0.0)
+Standards-Version: 3.9.6
+Homepage: http://co.rkscrew.co
+Vcs-Git: git://github.com/co-rkscrew/linux.git
+Vcs-Browser: https://github.com/co-rkscrew/linux.git
+
+Package: cscrew-thunar
+Architecture: all
+Depends: cscrew-base, thunar, thunar-archive-plugin, thunar-data, thunar-media-tags-plugin, thunar-vcs-plugin, thunar-volman, dbus-x11, gvfs, gamin, libfontconfig1, libfreetype6 , tumbler, xdg-user-dirs, gnome-icon-theme, ${misc:Depends}
+Description: Corkscrew Linux customization for thunar
+ Dependency package for thunar and thunar plugins.
+ A part of Corkscrew Linux distribution.
