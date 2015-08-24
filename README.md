@@ -9,9 +9,13 @@ Corkscrew Linux is a Debian based distribution. Mostly targeted to power users, 
 Quickie (one-liner)
 -------------------
 
-How to build a bootable image:
+How to download project and build a bootable image:
 
-`vagrant up ; vagrant ssh -c '/vagrant/img_builder.sh'`
+`git clone --recursive https://github.com/co-rkscrew/linux.git corkscrew-linux && cd corkscrew-linux && vagrant up && vagrant ssh -c '/vagrant/img_builder.sh'`
+
+Already cloned? Just build a bootable image:
+
+`vagrant up && vagrant ssh -c '/vagrant/img_builder.sh'`
 
 Meanwhile grab a coffee and, if everything goes ok, an image should popup in /iso folder.
 
@@ -19,5 +23,6 @@ Features
 --------
 
 Under the hood:
-- awesome
+- awesome window manager
+- [awesome-copycats themes](https://github.com/copycat-killer/awesome-copycats))
 - ...
