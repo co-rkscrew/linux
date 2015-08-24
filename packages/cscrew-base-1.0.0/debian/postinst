@@ -20,12 +20,20 @@ set -e
 
 case "$1" in
     configure)
+        # bin related
 		chmod 755 /usr/bin/cscrew-chmownd
 		chown root:root /usr/bin/cscrew-chmownd
-		
-		cscrew-chmownd "root:root" 644 /etc/profile.d/cscrew-base.sh
 		cscrew-chmownd "root:root" 755 /usr/bin/cscrew-diversion-add
 		cscrew-chmownd "root:root" 755 /usr/bin/cscrew-diversion-remove
+        
+        # profile.d
+        cscrew-chmownd "root:root" 644 /etc/profile.d/cscrew-base.sh
+
+        # bash.bashrc related
+        ln -s /etc/bash.bashrc.cscrew-base /etc/bash.bashrc
+        cscrew-chmownd "root:root" 644 /etc/bash.bashrc.cscrew-base
+        cscrew-chmownd "root:root" 644 /etc/bash.bashrc
+        install -d -o root -g root -m 755 /etc/bash.bashrc.d
     ;;
 
     abort-upgrade|abort-remove|abort-deconfigure)
