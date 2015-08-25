@@ -4,6 +4,7 @@ cscrew-awesome
 cscrew-rxvt
 cscrew-thunar
 cscrew-vim
+cscrew-xorg
 
 # base
 acpi
@@ -24,10 +25,3 @@ tar
 zip
 unzip
 p7zip
-unrar
-# unrar missing deps
-libc6
-
-# internet browser
-chromium
-
