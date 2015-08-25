@@ -10,7 +10,7 @@ Vcs-Browser: https://github.com/co-rkscrew/linux.git
 
 Package: cscrew-xorg
 Architecture: all
-Depends: cscrew-base, ${misc:Depends}
+Depends: cscrew-base, xserver-xorg, x11-xserver-utils, xinit, arandr, ${misc:Depends}
 Description: Corkscrew Linux customization for vim
  Dependency package for Xorg.
  A part of Corkscrew Linux distribution.
