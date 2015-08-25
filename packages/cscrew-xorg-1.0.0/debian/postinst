@@ -20,6 +20,10 @@ set -e
 
 case "$1" in
     configure)
+        ln -s /etc/X11/xinit/xinitrc.cscrew-xorg /etc/X11/xinit/xinitrc
+        cscrew-chmownd "root:root" 755 /etc/X11/xinit/xinitrc.cscrew-xorg
+        cscrew-chmownd "root:root" 755 /etc/X11/xinit/xinitrc
+        cscrew-chmownd "root:root" 755 /etc/X11/xinit/xinitrc.d/90-kb.sh
     ;;
 
     abort-upgrade|abort-remove|abort-deconfigure)

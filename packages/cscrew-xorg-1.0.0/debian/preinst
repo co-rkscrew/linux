@@ -13,9 +13,11 @@ set -e
 # for details, see https://www.debian.org/doc/debian-policy/ or
 # the debian-policy package
 
+pkg=cscrew-xorg
 
 case "$1" in
     install|upgrade)
+		cscrew-diversion-add $pkg "/etc/X11/xinit/xinitrc"
     ;;
 
     abort-upgrade)
