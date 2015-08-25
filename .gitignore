@@ -14,6 +14,7 @@
 /packages/cscrew-rxvt*/debian/cscrew-rxvt
 /packages/cscrew-thunar*/debian/cscrew-thunar
 /packages/cscrew-vim*/debian/cscrew-vim
+/packages/cscrew-xorg*/debian/cscrew-xorg
 
 # test files
 /simple-cdd/test-*.conf

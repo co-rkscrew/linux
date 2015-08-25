@@ -1,0 +1,16 @@
+Source: cscrew-xorg
+Section: unknown
+Priority: optional
+Maintainer: João Rodrigues <jlrodrigues.dev@gmail.com>
+Build-Depends: debhelper (>= 8.0.0)
+Standards-Version: 3.9.6
+Homepage: http://co.rkscrew.co
+Vcs-Git: git://github.com/co-rkscrew/linux.git
+Vcs-Browser: https://github.com/co-rkscrew/linux.git
+
+Package: cscrew-xorg
+Architecture: all
+Depends: cscrew-base, ${misc:Depends}
+Description: Corkscrew Linux customization for vim
+ Dependency package for Xorg.
+ A part of Corkscrew Linux distribution.
