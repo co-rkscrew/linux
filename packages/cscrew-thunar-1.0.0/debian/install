@@ -1,1 +1,2 @@
+root/etc/X11/xinit/xinitrc.d/90-thunar.sh /etc/X11/xinit/xinitrc.d/
 root/etc/xdg/xfce4/xfconf/xfce-perchannel-xml/thunar-volman.xml.cscrew-thunar /etc/xdg/xfce4/xfconf/xfce-perchannel-xml/
