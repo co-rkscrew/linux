@@ -25,3 +25,15 @@ tar
 zip
 unzip
 p7zip
+
+# internet browser
+chromium
+
+# pulseaudio
+pulseaudio
+pavucontrol
+
+firmware-linux-free
+firmware-linux-nonfree
+firmware-linux
+firmware-iwlwifi
