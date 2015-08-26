@@ -26,7 +26,7 @@ case "$1" in
 		ln -s /etc/xdg/cscrew-awesome/awesome-copycats/menugen /etc/xdg/awesome/
 		ln -s /etc/xdg/cscrew-awesome/awesome-copycats/scratchdrop /etc/xdg/awesome/
 		ln -s /etc/xdg/cscrew-awesome/awesome-copycats/themes /etc/xdg/awesome/
-		ln -s /etc/xdg/cscrew-awesome/awesome-copycats/rc.lua.powerarrow-darker /etc/xdg/awesome/rc.lua
+		ln -s /etc/xdg/cscrew-awesome/awesome-copycats/rc.lua.cscrew /etc/xdg/awesome/rc.lua
     ;;
 
     abort-upgrade|abort-remove|abort-deconfigure)
