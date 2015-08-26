@@ -1,5 +1,5 @@
 Source: cscrew-xorg
-Section: unknown
+Section: misc
 Priority: optional
 Maintainer: João Rodrigues <jlrodrigues.dev@gmail.com>
 Build-Depends: debhelper (>= 8.0.0)

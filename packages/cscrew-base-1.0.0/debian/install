@@ -1,3 +1,3 @@
-profile/* /etc/profile.d/
-bin/* /usr/bin/
 root/etc/bash.bashrc.cscrew-base /etc/
+root/etc/profile.d/* /etc/profile.d/
+root/usr/bin/* /usr/bin/

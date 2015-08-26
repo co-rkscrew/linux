@@ -1,2 +1,2 @@
-profile/* /etc/profile.d/
-conf/vimrc.local etc/vim
+root/etc/profile.d/* /etc/profile.d/
+root/etc/vim/vimrc.local etc/vim
