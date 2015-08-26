@@ -1,11 +1,3 @@
-# corkscrew
-cscrew-base
-cscrew-awesome
-cscrew-rxvt
-cscrew-thunar
-cscrew-vim
-cscrew-xorg
-
 # base
 acpi
 ntfs-3g
@@ -25,3 +17,10 @@ tar
 zip
 unzip
 p7zip
+
+# internet browser
+chromium
+
+# pulseaudio
+pulseaudio
+pavucontrol
