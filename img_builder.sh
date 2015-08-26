@@ -38,7 +38,7 @@ export SIMPLE_CDD_DEB_SMIRROR=$SIMPLE_CDD_DEB_SMIRROR
 export DEB_DIR=$DEB_DIR
 export ISO_DIR=$ISO_DIR
 
-build-simple-cdd --conf $SIMPLE_CDD_DIR/simple-cdd.conf $@ 2>&1 | tee $SIMPLE_CDD_LOG
+build-simple-cdd --conf $SIMPLE_CDD_DIR/simple-cdd.conf --logfile $SIMPLE_CDD_LOG $@ 
 
 # backup mirror
 rsync -a --delete $WORK_DIR_SIMPLE_CDD/tmp/mirror $TMP_DIR
