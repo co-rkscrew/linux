@@ -1,2 +1,3 @@
 root/etc/profile.d/* /etc/profile.d/
+root/etc/vim/vimrc-amix etc/vim/
 root/etc/vim/vimrc.local etc/vim

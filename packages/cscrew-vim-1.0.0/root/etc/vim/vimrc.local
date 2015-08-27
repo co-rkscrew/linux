@@ -1,1 +1,11 @@
-syntax on
+set runtimepath+=/etc/vim/vimrc-amix
+
+source /etc/vim/vimrc-amix/vimrcs/basic.vim
+source /etc/vim/vimrc-amix/vimrcs/filetypes.vim
+source /etc/vim/vimrc-amix/vimrcs/plugins_config.vim
+source /etc/vim/vimrc-amix/vimrcs/extended.vim
+
+try
+source /etc/vim/vimrc-amix/my_configs.vim
+catch
+endtry

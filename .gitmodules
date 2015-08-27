@@ -4,3 +4,6 @@
 [submodule "packages/cscrew-awesome-1.0.0/root/etc/xdg/cscrew-awesome/awesome-copycats"]
 	path = packages/cscrew-awesome-1.0.0/root/etc/xdg/cscrew-awesome/awesome-copycats
 	url = https://github.com/co-rkscrew/awesome-copycats.git
+[submodule "packages/cscrew-vim-1.0.0/root/etc/vim/vimrc-amix"]
+	path = packages/cscrew-vim-1.0.0/root/etc/vim/vimrc-amix
+	url = https://github.com/co-rkscrew/vimrc.git

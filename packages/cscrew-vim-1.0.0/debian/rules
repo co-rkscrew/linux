@@ -9,5 +9,9 @@
 # Uncomment this to turn on verbose mode.
 #export DH_VERBOSE=1
 
+# SO: http://stackoverflow.com/questions/30185972/dh-md5sums-argument-list-too-long
+# Empty target: https://goo.gl/m90o0y
+override_dh_md5sums: ;
+
 %:
 	dh $@ 
