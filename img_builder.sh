@@ -1,27 +1,17 @@
 #!/bin/bash
 set -e
-#set -x
-
-STARTTIME=$(date +%s)
 
 # load vars
 DIR=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
 source $DIR/vars
 
-mkdir -p $WORK_DIR_SIMPLE_CDD
-mkdir -p $ISO_DIR
-mkdir -p $TMP_DIR
+mkdir -p $WORK_DIR_SIMPLE_CDD $ISO_DIR $TMP_DIR ~/.gnupg
 
 # build deb packages
 /vagrant/deb_builder.sh
 
 # update profiles
 rsync -av --delete $PROFILES_DIR $WORK_DIR_SIMPLE_CDD
-
-# restore mirror (if available)
-if [ -d "$MIRROR_DIR" ]; then
-	rsync -a --delete $MIRROR_DIR $WORK_DIR_SIMPLE_CDD/tmp/
-fi
 
 # delete self built packages so it can be added again
 if [ -d "$WORK_DIR_SIMPLE_CDD/tmp/mirror" ]; then
@@ -40,13 +30,6 @@ export ISO_DIR=$ISO_DIR
 
 build-simple-cdd --conf $SIMPLE_CDD_DIR/simple-cdd.conf --logfile $SIMPLE_CDD_LOG $@ 
 
-# backup mirror
-rsync -a --delete $WORK_DIR_SIMPLE_CDD/tmp/mirror $TMP_DIR
-
 # isohybrid makes iso bootable from usb
 find $WORK_DIR_SIMPLE_CDD -type f -name "*.iso" | xargs -I {} mv {} $ISO_DIR
-find $ISO_DIR -type f -name "*.iso" | xargs -I {} isohybrid {}
-
-ENDTIME=$(date +%s)
-ELAPSED="$(($ENDTIME - $STARTTIME))"
-echo "Elapsed time:  $(date -d@$ELAPSED -u +%H:%M:%S)"
+find $ISO_DIR -type f -name "*.iso" | xargs -I {} isohybrid --uefi {}

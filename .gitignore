@@ -9,6 +9,7 @@
 /packages/**/debian/*.debhelper.log
 /packages/**/debian/*.substvars
 /packages/**/debian/files
+/packages/**/debian/debhelper-build-stamp
 /packages/cscrew-awesome*/debian/cscrew-awesome
 /packages/cscrew-base*/debian/cscrew-base
 /packages/cscrew-rxvt*/debian/cscrew-rxvt

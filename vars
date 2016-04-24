@@ -2,7 +2,7 @@
 # Configurable
 ###############################################################################
 
-SIMPLE_CDD_DEB_MIRROR="ftp.us.debian.org"
+SIMPLE_CDD_DEB_MIRROR="ftp.uk.debian.org"
 SIMPLE_CDD_DEB_SECURITY="security.debian.org"
 
 # Check if it works later

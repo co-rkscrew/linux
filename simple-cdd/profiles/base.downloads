@@ -9,7 +9,6 @@ cscrew-xorg
 # base
 acpi
 ntfs-3g
-wicd
 
 # utils
 build-essential
@@ -37,3 +36,4 @@ firmware-linux-free
 firmware-linux-nonfree
 firmware-linux
 firmware-iwlwifi
+xserver-xorg-input-all

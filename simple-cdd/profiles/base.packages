@@ -1,7 +1,7 @@
 # base
 acpi
 ntfs-3g
-wicd
+isc-dhcp-client
 
 # utils
 build-essential
