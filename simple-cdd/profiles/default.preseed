@@ -70,6 +70,7 @@ console-data    console-data/keymap/policy      select  Don't touch keymap
 # And their password, but use caution!
 #passwd   passwd/user-password    password insecure
 #passwd   passwd/user-password-again  password insecure
+user-setup-udeb passwd/user-default-groups string audio cdrom floppy video plugdev netdev powerdev
 
 
 #### Network configuration.

@@ -1,0 +1,6 @@
+[storage group mount override]
+Identity=unix-group:plugdev
+Action=org.freedesktop.udisks2.filesystem-mount;org.freedesktop.udisks2.filesystem-mount-system;org.freedesktop.udisks2.filesystem-unmount-others
+ResultAny=yes
+ResultInactive=yes
+ResultActive=yes
