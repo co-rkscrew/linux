@@ -1,2 +1,3 @@
 root/etc/X11/xinit/xinitrc.cscrew-xorg /etc/X11/xinit/
+root/etc/X11/xinit/xinitrc.d/90-beep.sh /etc/X11/xinit/xinitrc.d/
 root/etc/X11/xinit/xinitrc.d/90-kb.sh /etc/X11/xinit/xinitrc.d/
