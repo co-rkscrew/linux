@@ -1,12 +1,14 @@
 # base
 acpi
 ntfs-3g
-isc-dhcp-client
+ntp
+man-db
 
 # utils
 build-essential
 rsync
 tree
+openssl
 openssh-client
 wget
 curl
@@ -24,3 +26,12 @@ chromium
 # pulseaudio
 pulseaudio
 pavucontrol
+
+# editors
+emacs
+
+# unicode fonts
+ttf-wqy-zenhei
+fonts-ipafont-mincho
+fonts-ipafont-gothic
+ttf-unfonts-core
