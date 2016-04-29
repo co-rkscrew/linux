@@ -4,6 +4,10 @@ ntfs-3g
 ntp
 man-db
 
+# network
+isc-dhcp-client
+wpasupplicant
+
 # utils
 build-essential
 rsync
