@@ -26,7 +26,7 @@ ISO_DIR="$TMP_DIR/iso"
 MIRROR_DIR="$TMP_DIR/mirror"
 
 # simple-cdd workspace 
-WORK_DIR="/tmp/corkscrew"
+WORK_DIR="/home/vagrant/corkscrew"
 WORK_DIR_SIMPLE_CDD="$WORK_DIR/simple-cdd"
 
 # logging
