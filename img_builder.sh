@@ -33,3 +33,9 @@ build-simple-cdd --conf $SIMPLE_CDD_DIR/simple-cdd.conf --logfile $SIMPLE_CDD_LO
 # isohybrid makes iso bootable from usb
 find $WORK_DIR_SIMPLE_CDD -type f -name "*.iso" | xargs -I {} mv {} $ISO_DIR
 find $ISO_DIR -type f -name "*.iso" | xargs -I {} isohybrid --uefi {}
+
+# print out debian installer kernel version and packaged kernel
+# if they are unsynced/not the same, you may need to edit
+# - ./simple-cdd/profiles/default.conf
+file $WORK_DIR_SIMPLE_CDD/tmp/cd-build/stretch/CD1/install.amd/vmlinuz
+find $WORK_DIR_SIMPLE_CDD/tmp/cd-build/stretch/CD1/pool -name "linux-image-*-amd64*"
